@@ -1,0 +1,18 @@
+[
+  {
+    "id": "munck-25t-mc25006",
+    "category": "Caminh\u00f5es Munck",
+    "model": "Munck 25t - MC 25006",
+    "description": "Caminh\u00e3o Munck 25 toneladas, ideal para i\u00e7amento e transporte de cargas em obras.",
+    "image": "/assets/logo.jpg",
+    "available": true
+  },
+  {
+    "id": "munck-45t",
+    "category": "Caminh\u00f5es Munck",
+    "model": "Munck 45t",
+    "description": "Caminh\u00e3o Munck 45 toneladas, com alta capacidade para trabalhos pesados.",
+    "image": "/assets/logo.jpg",
+    "available": true
+  }
+]
