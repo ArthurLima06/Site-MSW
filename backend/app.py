@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import os
-import smtplib
+import os, json, pathlib, smtplib
 from email.message import EmailMessage
 
 app = Flask(__name__)
@@ -15,7 +14,6 @@ SMTP_PASS = os.getenv('SMTP_PASS')
 
 @app.route('/api/machines')
 def machines():
-    import json, pathlib
     p = pathlib.Path(__file__).parents[1] / 'frontend' / 'src' / 'data' / 'machines.json'
     if p.exists():
         return jsonify(json.loads(p.read_text(encoding='utf-8')))
@@ -33,7 +31,6 @@ def quote():
     if not (name and (email or phone) and items):
         return jsonify({'ok': False, 'error': 'Campos obrigatórios faltando'}), 400
 
-    # build email
     try:
         msg = EmailMessage()
         msg['Subject'] = f'Orçamento: {name} - {len(items)} itens'
@@ -50,7 +47,6 @@ def quote():
         msg.set_content('\n'.join(body))
 
         if not SMTP_HOST:
-            # If SMTP not configured, just print to console (for dev)
             print('--- Email não enviado (SMTP não configurado). Conteúdo: ---')
             print(msg)
         else:

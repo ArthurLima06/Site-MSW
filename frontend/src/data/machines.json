@@ -1,18 +1,42 @@
 [
   {
-    "id": "munck-25t-mc25006",
-    "category": "Caminh\u00f5es Munck",
+    "id": "munck-25-mc25006",
+    "category": "Caminhões Munck",
     "model": "Munck 25t - MC 25006",
-    "description": "Caminh\u00e3o Munck 25 toneladas, ideal para i\u00e7amento e transporte de cargas em obras.",
-    "image": "/assets/logo.jpg",
+    "capacity": "25 t",
+    "description": "Munck 25 toneladas, indicado para içamento e transporte em obras e serviços industriais.",
+    "image": "/assets/munck25_mc25006.jpg",
+    "graph": "/assets/grafico_mc25006.png",
     "available": true
   },
   {
-    "id": "munck-45t",
-    "category": "Caminh\u00f5es Munck",
-    "model": "Munck 45t",
-    "description": "Caminh\u00e3o Munck 45 toneladas, com alta capacidade para trabalhos pesados.",
-    "image": "/assets/logo.jpg",
+    "id": "munck-25-mc25607",
+    "category": "Caminhões Munck",
+    "model": "Munck 25t - MC 25607",
+    "capacity": "25 t",
+    "description": "Munck 25 toneladas, configuração com lança estendida para maior alcance.",
+    "image": "/assets/munck25_mc25607.jpg",
+    "graph": "/assets/grafico_mc25607.png",
+    "available": true
+  },
+  {
+    "id": "munck-30-md30007",
+    "category": "Caminhões Munck",
+    "model": "Munck 30t - MD 30007",
+    "capacity": "30 t",
+    "description": "Munck 30 toneladas, maior capacidade e estabilidade para trabalhos pesados.",
+    "image": "/assets/munck30_md30007.jpg",
+    "graph": "/assets/grafico_md30007.png",
+    "available": true
+  },
+  {
+    "id": "munck-45-tka45700",
+    "category": "Caminhões Munck",
+    "model": "Munck 45t - TKA 45.700",
+    "capacity": "45 t",
+    "description": "Munck 45 toneladas com lança de grande alcance, ideal para operações de alta demanda.",
+    "image": "/assets/munck45_tka45700.jpg",
+    "graph": "/assets/grafico_tka45700.png",
     "available": true
   }
 ]
