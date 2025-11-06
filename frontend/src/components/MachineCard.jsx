@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function MachineCard({item}){
+export default function MachineCard({item, onAdd, previewOnly}){
   const [showGraph, setShowGraph] = useState(false)
   return (
     <div className="card">
@@ -9,7 +9,7 @@ export default function MachineCard({item}){
       <div className="category">{item.category} • Capacidade: {item.capacity}</div>
       <p>{item.description}</p>
       <div style={{display:'flex', gap:8, marginTop:8}}>
-        <button className="btn" onClick={()=> alert('Funcionalidade de orçamento: adicione ao carrinho (placeholder)')}>Adicionar ao orçamento</button>
+        <button className="btn" onClick={()=> onAdd && onAdd(item)}>Adicionar ao orçamento</button>
         <button className="btn" style={{background:'#555'}} onClick={()=> setShowGraph(s=>!s)}>{showGraph ? 'Fechar gráfico' : 'Ver gráfico técnico'}</button>
       </div>
       {showGraph && item.graph && (
